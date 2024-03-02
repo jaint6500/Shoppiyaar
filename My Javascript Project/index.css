@@ -176,11 +176,12 @@
       top:0;
       right: -100%;
       width: 310px;
-      min-height: 100vh;
+      height: 100%;
       padding: 20px;
       background: #fff;
       box-shadow: -2px 0 4px rgb(129, 129, 129);
       transition: 0.3s;
+      overflow-y: auto;
     }
 
     .cart.active{
