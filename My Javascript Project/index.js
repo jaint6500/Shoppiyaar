@@ -1,20 +1,25 @@
       
-    let navbar = document.querySelector(".navbar");
-    document.querySelector("#menu-btn").onclick = () => {
-      navbar.classList.toggle("active");
-      shoppingCart.classList.remove("active");
-    };
+   let navbar = document.querySelector(".navbar");
+let shoppingCart = document.querySelector(".cart");
 
-    window.onscroll = () => {
-      shoppingCart.classList.remove("active");
-      navbar.classList.remove("active");
-    };
+document.querySelector("#menu-btn").onclick = () => {
+    navbar.classList.toggle("active");
+    shoppingCart.classList.remove("active");
+};
 
-    let shoppingCart = document.querySelector(".cart");
-    document.querySelector("#shop-cart-btn").onclick = () => {
-      shoppingCart.classList.toggle("active");
-      navbar.classList.remove("active");
-    };
+document.querySelector("#shop-cart-btn").onclick = () => {
+    shoppingCart.classList.toggle("active");
+    navbar.classList.remove("active");
+};
+
+window.onscroll = () => {
+    if (shoppingCart.classList.contains("active")) {
+        navbar.classList.remove("active");
+    } else {
+        shoppingCart.classList.remove("active");
+        navbar.classList.remove("active");
+    }
+};
     
       $(document).ready(function () {
         $(".banner_slider").slick({
