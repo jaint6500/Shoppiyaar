@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Ecommerce Website - Shop</title>
+    <link
+      rel="shortcut icon"
+      href="images/Favicon image.jpg"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Open+Sans&family=Oswald:wght@400;500;700&family=Parisienne&family=Poppins:wght@500;600;900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Sho<span class="logo-span">ppiy</span>aar</a>
+
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="Shop.html">Store</a>
+        <a href="Blogs.html">Blogs</a>
+        <a href="Contact.html">Contact Us</a>
+      </nav>
+
+      <div class="icons">
+        <div class="fa fa-bars" id="menu-btn"></div>
+        <div class="fa fa-shopping-cart" id="shop-cart-btn"></div>
+      </div>
+
+      <!-- Add to cart -->
+
+      <div class="cart">
+        <i class="fa fa-times" id="close"></i>
+        <h2 class="cart-title">Your Cart Details</h2>
+        <div class="cart-content"></div>
+
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+
+        <button type="button" class="btn-buy">Buy Now</button>
+      </div>
+    </header>
+
+    <div class="product-container">
+      <h3 class="mytitle">Winter Collection</h3>
+      <br />
+      <div class="category-container">
+        <div class="category-buttons">
+          <button data-filter="ShowAll" class="category-btns active">
+            Show All
+          </button>
+          <button data-filter="Women" class="category-btns">Women</button>
+          <button data-filter="Men" class="category-btns">Men</button>
+          <button data-filter="Girl" class="category-btns">Girl</button>
+          <button data-filter="Boy" class="category-btns">Boy</button>
+        </div>
+      </div>
+      <br /><br />
+      <!-- 1 -->
+      <div class="card-box">
+        <div class="product" data-item="Girl">
+          <div class="product-img">
+            <img
+              class="product-img-one"
+              src="images/Girl winter 1.jpg"
+              alt=""
+            />
+            <img src="images/Girl winter 1 back.jpg" alt="" />
+          </div>
+
+          <div class="title-icon">
+            <h3 class="product-title">
+              Alan Jones Clothing Girl's Cotton Hooded Neck Sweatshirt
+            </h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <div class="price">$124.14</div>
+        </div>
+
+        <!-- 2 -->
+
+        <div class="product" data-item="Women">
+          <div class="product-img">
+            <img
+              class="product-img-one"
+              src="images/Women winter 1.jpg"
+              alt=""
+            />
+            <img src="images/Women winter back 1.jpg" alt="" />
+          </div>
+
+          <div class="title-icon">
+            <h3 class="product-title">
+              Women's Fit Bomber Jacket For Winter Wear
+            </h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <div class="price">$150.50</div>
+        </div>
+
+        <!-- 3 -->
+
+        <div class="product" data-item="Boy">
+          <div class="product-img">
+            <img class="product-img-one" src="images/Boy winter 1.jpg" alt="" />
+            <img src="images/Boy winter back 1.jpg" alt="" />
+          </div>
+
+          <div class="title-icon">
+            <h3 class="product-title">
+              Alan Jones Clothing Boy's Fleece Hooded Sweatshirt
+            </h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <div class="price">$142.18</div>
+        </div>
+
+        <!-- 4 -->
+
+        <div class="product" data-item="Women">
+          <div class="product-img">
+            <img
+              class="product-img-one"
+              src="images/Women winter 3.jpg"
+              alt=""
+            />
+            <img src="images/women winter back 3.jpg" alt="" />
+          </div>
+
+          <div class="title-icon">
+            <h3 class="product-title">
+              GODFREY Women's High Neck Knitted Woolen Sweater
+            </h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <div class="price">$120.56</div>
+        </div>
+
+        <!-- 5 -->
+
+        <div class="product" data-item="Boy">
+          <div class="product-img">
+            <img class="product-img-one" src="images/Boy winter 2.jpg" alt="" />
+            <img src="images/Boy winter back 2.jpg" alt="" />
+          </div>
+
+          <div class="title-icon">
+            <h3 class="product-title">
+              Alan Jones Clothing Boys Cotton Colorblocked Hooded Neck
+              Sweatshirt
+            </h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <div class="price">$122.00</div>
+        </div>
+
+        <!-- 6 -->
+
+        <div class="product" data-item="Men">
+          <div class="product-img">
+            <img class="product-img-one" src="images/Men winter 1.jpg" alt="" />
+            <img src="images/Men winter back 1.jpg" alt="" />
+          </div>
+
+          <div class="title-icon">
+            <h3 class="product-title">
+              Men's Cotton Blend High Neck Sweatshirt
+            </h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <div class="price">$123.20</div>
+        </div>
+
+        <!-- 7 -->
+
+        <div class="product" data-item="Girl">
+          <div class="product-img">
+            <img
+              class="product-img-one"
+              src="images/Girl winter 3.jpg"
+              alt=""
+            />
+            <img src="images/Girl winter 3 back.jpg" alt="" />
+          </div>
+
+          <div class="title-icon">
+            <h3 class="product-title">
+              Pyjama Set for Girls, Boys, Kids. Embroidery Print, Baby Pink
+            </h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <div class="price">$108.40</div>
+        </div>
+
+        <!-- 8 -->
+
+        <div class="product" data-item="Men">
+          <div class="product-img">
+            <img class="product-img-one" src="images/Men winter 2.jpg" alt="" />
+            <img src="images/Men winter back 2.jpg" alt="" />
+          </div>
+
+          <div class="title-icon">
+            <h3 class="product-title">
+              Men's Cotton Rich Light Weight Mock Neck Sweatshirt
+            </h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <div class="price">$143.09</div>
+        </div>
+
+        <!-- 9 -->
+
+        <div class="product" data-item="Women">
+          <div class="product-img">
+            <img
+              class="product-img-one"
+              src="images/Women winter 2.jpg"
+              alt=""
+            />
+            <img src="images/women winter back 2.jpg" alt="" />
+          </div>
+
+          <div class="title-icon">
+            <h3 class="product-title">Long Overcoat for Women</h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <div class="price">$175.13</div>
+        </div>
+
+        <!-- 10 -->
+
+        <div class="product" data-item="Boy">
+          <div class="product-img">
+            <img class="product-img-one" src="images/Boy winter 3.jpg" alt="" />
+            <img src="images/Boy winter back 3.jpg" alt="" />
+          </div>
+
+          <div class="title-icon">
+            <h3 class="product-title">
+              Alan Jones Clothing Boy's Colorblock Cotton Sweatshirt
+            </h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <div class="price">$113.30</div>
+        </div>
+
+        <!-- 11 -->
+
+        <div class="product" data-item="Men">
+          <div class="product-img">
+            <img class="product-img-one" src="images/Men winter 3.jpg" alt="" />
+            <img src="images/Men winter back 3.jpg" alt="" />
+          </div>
+
+          <div class="title-icon">
+            <h3 class="product-title">Men's Charcoal Grey Trench Coat</h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <div class="price">$170.40</div>
+        </div>
+
+        <!-- 12 -->
+
+        <div class="product" data-item="Girl">
+          <div class="product-img">
+            <img
+              class="product-img-one"
+              src="images/Girl winter 2.jpg"
+              alt=""
+            />
+            <img src="images/Girl winter 2 back.jpg" alt="" />
+          </div>
+
+          <div class="title-icon">
+            <h3 class="product-title">
+              Ameeha Kids Girls' Velvet Designer Top And Pant Clothing Set
+            </h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <div class="price">$115.00</div>
+        </div>
+
+        <!-- 13 -->
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer_col">
+            <h2 class="footer-hd1">
+              Sho<span class="logo-span">ppiy</span>aar
+            </h2>
+            <p class="footer-para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              fuga id ratione facere maiores odio.
+            </p>
+          </div>
+          <div class="footer_col">
+            <h2 class="footer-hd">Quick Links</h2>
+            <br />
+            <nav class="footer-navbar">
+              <a href="#Home">Home</a>
+              <a href="#Features">Features</a>
+              <a href="#Store">Store</a>
+              <a href="#Blogs">Blogs</a>
+              <a href="#Contact Us">Contact Us</a>
+            </nav>
+          </div>
+          <div class="footer_col">
+            <h2 class="footer-hd">Features</h2>
+            <br />
+            <ul class="footer-list">
+              <li>Customer Support</li>
+              <li>Product Catalog</li>
+              <li>Product Reviews and Ratings</li>
+              <li>Analytics and Reporting</li>
+              <li>Discounts and Promotions</li>
+            </ul>
+          </div>
+          <div class="footer_col">
+            <h2 class="footer-hd">Contact Us</h2>
+            <p class="footer-para"><b>Email</b> : shoppiyaar@gmail.com</p>
+            <p class="footer-para">
+              <b>Address</b> : LTW Mall, Kevi Road, Delhi-110023
+            </p>
+            <p class="footer-para"><b>Phone</b> : +99-569-317-780</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

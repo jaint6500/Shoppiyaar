@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Ecommerce Website - Shop</title>
+    <link
+      rel="shortcut icon"
+      href="images/Favicon image.jpg"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Open+Sans&family=Oswald:wght@400;500;700&family=Parisienne&family=Poppins:wght@500;600;900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Sho<span class="logo-span">ppiy</span>aar</a>
+
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="Shop.html">Store</a>
+        <a href="Blogs.html">Blogs</a>
+        <a href="Contact.html">Contact Us</a>
+      </nav>
+
+      <div class="icons">
+        <div class="fa fa-bars" id="menu-btn"></div>
+        <div class="fa fa-shopping-cart" id="shop-cart-btn"></div>
+      </div>
+
+      <!-- Add to cart -->
+
+      <div class="cart">
+        <i class="fa fa-times" id="close"></i>
+        <h2 class="cart-title">Your Cart Details</h2>
+        <div class="cart-content"></div>
+
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+
+        <button type="button" class="btn-buy">Buy Now</button>
+      </div>
+    </header>
+
+    <div class="product-container">
+      <h3 class="mytitle">Summer Collection</h3>
+      <br />
+      <div class="category-container">
+        <div class="category-buttons">
+          <button data-filter="ShowAll" class="category-btns active">
+            Show All
+          </button>
+          <button data-filter="Women" class="category-btns">Women</button>
+          <button data-filter="Men" class="category-btns">Men</button>
+          <button data-filter="Girl" class="category-btns">Girl</button>
+          <button data-filter="Boy" class="category-btns">Boy</button>
+        </div>
+      </div>
+      <br /><br />
+      <!-- 1 -->
+      <div class="card-box">
+        <div class="product" data-item="Girl">
+          <div class="product-img">
+            <img
+              class="product-img-one"
+              src="images/girls summer 1.jpg"
+              alt=""
+            />
+            <img src="images/girls summer back 1.jpg" alt="" />
+          </div>
+
+          <div class="title-icon">
+            <h3 class="product-title">
+              Jumpsuits For Girls, Midi Dress, Western and Casual Wear
+            </h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <div class="price">$117.14</div>
+        </div>
+
+        <!-- 2 -->
+
+        <div class="product" data-item="Women">
+          <div class="product-img">
+            <img
+              class="product-img-one"
+              src="images/Women summer 1.jpg"
+              alt=""
+            />
+            <img src="images/Women summer back 1.jpg" alt="" />
+          </div>
+
+          <div class="title-icon">
+            <h3 class="product-title">Lymio Western Dresses for Women</h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <div class="price">$115.10</div>
+        </div>
+
+        <!-- 3 -->
+
+        <div class="product" data-item="Girl">
+          <div class="product-img">
+            <img
+              class="product-img-one"
+              src="images/girls summer 5.jpg"
+              alt=""
+            />
+            <img src="images/girls summer back 5.jpg" alt="" />
+          </div>
+
+          <div class="title-icon">
+            <h3 class="product-title">
+              Girl's Kids Westren and Summer Dress One Piece
+            </h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <div class="price">$132.15</div>
+        </div>
+
+        <!-- 4 -->
+
+        <div class="product" data-item="Women">
+          <div class="product-img">
+            <img
+              class="product-img-one"
+              src="images/Women summer 2.jpg"
+              alt=""
+            />
+            <img src="images/Women summer back 2.jpg" alt="" />
+          </div>
+
+          <div class="title-icon">
+            <h3 class="product-title">
+              Women Western Heart Printed & Long Puff Sleeve Knee Length Dress
+            </h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <div class="price">$120.56</div>
+        </div>
+
+        <!-- 5 -->
+
+        <div class="product" data-item="Boy">
+          <div class="product-img">
+            <img class="product-img-one" src="images/Boy summer 1.jpg" alt="" />
+            <img src="images/Boy summer back 1.jpg" alt="" />
+          </div>
+
+          <div class="title-icon">
+            <h3 class="product-title">Van Heusen Boys Regular Sweatpants</h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <div class="price">$112.00</div>
+        </div>
+
+        <!-- 6 -->
+
+        <div class="product" data-item="Men">
+          <div class="product-img">
+            <img class="product-img-one" src="images/Men summer 1.jpg" alt="" />
+            <img src="images/Men summer back 1.jpg" alt="" />
+          </div>
+
+          <div class="title-icon">
+            <h3 class="product-title">Men Classic Denim Shirt</h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <div class="price">$103.20</div>
+        </div>
+
+        <!-- 7 -->
+
+        <div class="product" data-item="Girl">
+          <div class="product-img">
+            <img
+              class="product-img-one"
+              src="images/girls summer 2.jpg"
+              alt=""
+            />
+            <img src="images/girls summer back 2.jpg" alt="" />
+          </div>
+
+          <div class="title-icon">
+            <h3 class="product-title">
+              Western Slub Rayon Crop Top with Shorts for Girl's
+            </h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <div class="price">$100.44</div>
+        </div>
+
+        <!-- 8 -->
+
+        <div class="product" data-item="Men">
+          <div class="product-img">
+            <img class="product-img-one" src="images/Men summer 2.jpg" alt="" />
+            <img src="images/Men summer back 2.jpg" alt="" />
+          </div>
+
+          <div class="title-icon">
+            <h3 class="product-title">
+              Men's Long Sleeve Button Down Panel Denim Jacket
+            </h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <div class="price">$143.09</div>
+        </div>
+
+        <!-- 9 -->
+
+        <div class="product" data-item="Women">
+          <div class="product-img">
+            <img
+              class="product-img-one"
+              src="images/Women summer 4.jpg"
+              alt=""
+            />
+            <img src="images/Women summer back 4.jpg" alt="" />
+          </div>
+
+          <div class="title-icon">
+            <h3 class="product-title">
+              Women Short Sleeve Rib Knitted Cotton Racer Back Crop Tank Tops
+              with Zip
+            </h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <div class="price">$110.03</div>
+        </div>
+
+        <!-- 10 -->
+
+        <div class="product" data-item="Boy">
+          <div class="product-img">
+            <img class="product-img-one" src="images/Boy summer 2.jpg" alt="" />
+            <img src="images/Boy summer back 2.jpg" alt="" />
+          </div>
+
+          <div class="title-icon">
+            <h3 class="product-title">
+              Boys Colored bio Washed Cotton Short Sleeve Solid Tshirt
+            </h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <div class="price">$105.30</div>
+        </div>
+
+        <!-- 11 -->
+
+        <div class="product" data-item="Men">
+          <div class="product-img">
+            <img class="product-img-one" src="images/Men summer 3.jpg" alt="" />
+            <img src="images/Men summer back 3.jpg" alt="" />
+          </div>
+
+          <div class="title-icon">
+            <h3 class="product-title">Pepe Jeans Men T-Shirt</h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <div class="price">$100.40</div>
+        </div>
+
+        <!-- 12 -->
+
+        <div class="product" data-item="Girl">
+          <div class="product-img">
+            <img
+              class="product-img-one"
+              src="images/girls summer 3.jpg"
+              alt=""
+            />
+            <img src="images/girls summer back 3.jpg" alt="" />
+          </div>
+
+          <div class="title-icon">
+            <h3 class="product-title">
+              Girl Sky Blue Solid Georgette Top with Colorful Dot printed
+              Jagging
+            </h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <div class="price">$105.00</div>
+        </div>
+
+        <!-- 13 -->
+
+        <div class="product" data-item="Boy">
+          <div class="product-img">
+            <img class="product-img-one" src="images/Boy summer 3.jpg" alt="" />
+            <img src="images/Boy summer back 3.jpg" alt="" />
+          </div>
+
+          <div class="title-icon">
+            <h3 class="product-title">
+              Real Basics Boys Regular Fit Track Pant
+            </h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <div class="price">$99.68</div>
+        </div>
+
+        <!-- 14 -->
+
+        <div class="product" data-item="Girl">
+          <div class="product-img">
+            <img
+              class="product-img-one"
+              src="images/girls summer 4.jpg"
+              alt=""
+            />
+            <img src="images/girls summer back 4.jpg" alt="" />
+          </div>
+
+          <div class="title-icon">
+            <h3 class="product-title">
+              TeenTrums Girls Denim Tie-up Top-Denim
+            </h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <div class="price">$120.50</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer_col">
+            <h2 class="footer-hd1">
+              Sho<span class="logo-span">ppiy</span>aar
+            </h2>
+            <p class="footer-para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              fuga id ratione facere maiores odio.
+            </p>
+          </div>
+          <div class="footer_col">
+            <h2 class="footer-hd">Quick Links</h2>
+            <br />
+            <nav class="footer-navbar">
+              <a href="#Home">Home</a>
+              <a href="#Features">Features</a>
+              <a href="#Store">Store</a>
+              <a href="#Blogs">Blogs</a>
+              <a href="#Contact Us">Contact Us</a>
+            </nav>
+          </div>
+          <div class="footer_col">
+            <h2 class="footer-hd">Features</h2>
+            <br />
+            <ul class="footer-list">
+              <li>Customer Support</li>
+              <li>Product Catalog</li>
+              <li>Product Reviews and Ratings</li>
+              <li>Analytics and Reporting</li>
+              <li>Discounts and Promotions</li>
+            </ul>
+          </div>
+          <div class="footer_col">
+            <h2 class="footer-hd">Contact Us</h2>
+            <p class="footer-para"><b>Email</b> : shoppiyaar@gmail.com</p>
+            <p class="footer-para">
+              <b>Address</b> : LTW Mall, Kevi Road, Delhi-110023
+            </p>
+            <p class="footer-para"><b>Phone</b> : +99-569-317-780</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

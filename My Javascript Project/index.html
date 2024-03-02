@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Ecommerce Website</title>
+
+    <link
+      rel="shortcut icon"
+      href="images/Favicon image.jpg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Open+Sans&family=Oswald:wght@400;500;700&family=Parisienne&family=Poppins:wght@500;600;900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Sho<span class="logo-span">ppiy</span>aar</a>
+
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="Shop.html">Store</a>
+        <a href="Blogs.html">Blogs</a>
+        <a href="Contact.html">Contact Us</a>
+      </nav>
+
+      <div class="icons">
+        <div class="fa fa-bars" id="menu-btn"></div>
+        <div class="fa fa-shopping-cart" id="shop-cart-btn"></div>
+      </div>
+
+      <!-- Add to cart -->
+
+      <div class="cart">
+        <i class="fa fa-times" id="close"></i>
+        <h2 class="cart-title">Your Cart Details</h2>
+        <div class="cart-content"></div>
+
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+
+        <button type="button" class="btn-buy">Buy Now</button>
+      </div>
+
+      <!-- <div class="shopping-cart">
+        <h1 class="cart-details">Your Cart Details</h1>
+        <div class="box">
+          <i class="fa fa-trash"></i>
+          <img src="images/front wear 2.jpg" alt="" />
+          <div class="content">
+            <h3>Girl's Summer Top</h3>
+            <span class="price">$120/-</span>
+            <span class="quantity">Qty : 1</span>
+          </div>
+        </div>
+
+        
+
+        <div class="box">
+          <i class="fa fa-trash"></i>
+          <img src="images/front wear 3.jpg" alt="" />
+          <div class="content">
+            <h3>Formal Purpose Top</h3>
+            <span class="price">$100/-</span>
+            <span class="quantity">Qty : 1</span>
+          </div>
+        </div>
+
+        <div class="total">Total : 0</div>
+        <a href="" class="cart-btn">CheckOut</a>
+      </div> -->
+    </header>
+
+    <!-- Banners section  -->
+
+    <div class="banner_slider">
+      <div class="slide">
+        <!-- banner 1 -->
+
+        <div class="banner-text">
+          <h2 class="text1">Limited Time Offer</h2>
+          <h1 class="text2">Sale</h1>
+          <p class="text3">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <br />
+          <button class="banner-btn">Explore</button>
+        </div>
+      </div>
+
+      <!-- banner 2 -->
+
+      <div class="slide slide_two">
+        <div class="banner-text-two">
+          <h2 class="text1">Limited Time Offer</h2>
+          <h1 class="text2">Sale</h1>
+          <p class="text3">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <br />
+          <button class="banner-btn">Explore</button>
+        </div>
+      </div>
+
+      <!-- banner 3 -->
+
+      <div class="slide slide_three">
+        <div class="banner-text-three">
+          <h2 class="text1">Limited Time Offer</h2>
+          <h1 class="text2">Sale</h1>
+          <p class="text3">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <br />
+          <button class="banner-btn">Explore</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Collections -->
+
+    <div class="collection">
+      <h1 id="collection-heading">Collections</h1>
+      <div class="collection-box">
+        <!-- card1 -->
+
+        <div class="Collection-card1 collection-cards">
+          <div class="collection-img1">
+            <h4 class="collection-hd">Summer Collections</h4>
+            <p class="collection-para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aut
+              repellat incidunt.
+            </p>
+            <a class="click" href="summercollection.html">Click Here</a>
+          </div>
+        </div>
+
+        <!-- card2 -->
+
+        <div class="Collection-card2 collection-cards">
+          <div class="collection-img2">
+            <h4 class="collection-hd">Winter Collections</h4>
+            <p class="collection-para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aut
+              repellat incidunt.
+            </p>
+            <a class="click" href="wintercollection.html">Click Here</a>
+          </div>
+        </div>
+
+        <!-- card3 -->
+
+        <div class="Collection-card1 collection-cards">
+          <div class="collection-img3">
+            <h4 class="collection-hd">Party Collections</h4>
+            <p class="collection-para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aut
+              repellat incidunt.
+            </p>
+            <a class="click" href="Partycollection.html">Click Here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured products -->
+
+    <div class="feature-container">
+      <h1>Featured Products</h1>
+      <div class="feature-box">
+        <div class="box product">
+          <div>
+            <img
+              class="product-img-one"
+              src="images/featured kid G .jpg"
+              alt=""
+            />
+          </div>
+          <div class="feature-product-title">
+            <h3 class="product-title">Girls Midi/Knee Length Casual Dress</h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <p class="price">$107</p>
+        </div>
+
+        <div class="box product">
+          <div>
+            <img
+              class="product-img-one"
+              src="images/featured men .jpg"
+              alt=""
+            />
+          </div>
+          <div class="feature-product-title">
+            <h3 class="product-title">
+              Neck Half Sleeve Striped Print Casual Men Tshirt
+            </h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <p class="price">$100</p>
+        </div>
+
+        <div class="box product">
+          <div>
+            <img
+              class="product-img-one"
+              src="images/featured women .jpg"
+              alt=""
+            />
+          </div>
+          <div class="feature-product-title">
+            <h3 class="product-title">Women Two-Piece Outfits</h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <p class="price">$118</p>
+        </div>
+
+        <div class="box product">
+          <div>
+            <img
+              class="product-img-one"
+              src="images/featured kid B .jpg"
+              alt=""
+            />
+          </div>
+          <div class="feature-product-title">
+            <h3 class="product-title">
+              Kids Wear 3 Piece Suit Set with Coat, Pant, Tie & Shirt
+            </h3>
+            <i class="fa fa-shopping-bag add-cart"></i>
+          </div>
+          <p class="price">$136</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blogs -->
+
+    <div class="blog-container">
+      <h4 class="blog-hd">Latest Blogs</h4>
+
+      <!-- Blog Card 1 -->
+      <div class="blog-post">
+        <div class="blog-post-img">
+          <img class="blog-img" src="images/Blog post - 1.jpg" alt="" />
+        </div>
+        <div class="blog-content">
+          <div class="blog-post-date">
+            <span>Feb 23 2024</span>
+          </div>
+          <h3 class="bl-hd">Luxury Wear - Necessity of Today</h3>
+          <br />
+          <p class="bl-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+            explicabo cum illo unde ipsa optio ut ab quis! Accusantium, alias.
+          </p>
+          <br />
+          <a class="bl-link" href="Blogs.html">Read More...</a>
+        </div>
+      </div>
+
+      <!--  Blog Card 2 -->
+
+      <div class="blog-post">
+        <div class="blog-post-img">
+          <img class="blog-img" src="images/blog post-2.jpg" alt="" />
+        </div>
+        <div class="blog-content">
+          <div class="blog-post-date">
+            <span>Feb 24 2024</span>
+          </div>
+          <h3 class="bl-hd">Simplicity of Modernity</h3>
+          <br />
+          <p class="bl-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+            explicabo cum illo unde ipsa optio ut ab quis! Accusantium, alias.
+          </p>
+          <br />
+          <a class="bl-link" href="Blogs.html">Read More...</a>
+        </div>
+      </div>
+
+      <!--  Blog Card 3 -->
+
+      <div class="blog-post">
+        <div class="blog-post-img">
+          <img class="blog-img" src="images/blog post -3.jpg" alt="" />
+        </div>
+        <div class="blog-content">
+          <div class="blog-post-date">
+            <span>Feb 25 2024</span>
+          </div>
+          <h3 class="bl-hd">Black Black Wear</h3>
+          <br />
+          <p class="bl-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+            explicabo cum illo unde ipsa optio ut ab quis! Accusantium, alias.
+          </p>
+          <br />
+          <a class="bl-link" href="Blogs.html">Read More...</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Newsletter -->
+
+    <div class="newsletter-container">
+      <div class="newsletter-content">
+        <div class="user-info">
+          <h2>Newsletter</h2>
+          <input
+            type="email"
+            name="email"
+            id=""
+            placeholder="Enter Your Email"
+          />
+          <button type="submit">Submit</button>
+        </div>
+        <div class="Social-links">
+          <h2>Follow Our Social Links:</h2>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.twitter.com/" target="_blank"
+            ><i class="fa-brands fa-square-twitter"></i
+          ></a>
+          <a href="https://www.youtube.com/" target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer_col">
+            <h2 class="footer-hd1">
+              Sho<span class="logo-span">ppiy</span>aar
+            </h2>
+            <p class="footer-para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              fuga id ratione facere maiores odio.
+            </p>
+          </div>
+          <div class="footer_col">
+            <h2 class="footer-hd">Quick Links</h2>
+            <br />
+            <nav class="footer-navbar">
+              <a href="#Home">Home</a>
+              <a href="#Store">Store</a>
+              <a href="#Blogs">Blogs</a>
+              <a href="#Contact Us">Contact Us</a>
+            </nav>
+          </div>
+          <div class="footer_col">
+            <h2 class="footer-hd">Features</h2>
+            <br />
+            <ul class="footer-list">
+              <li>Customer Support</li>
+              <li>Product Catalog</li>
+              <li>Product Reviews and Ratings</li>
+              <li>Analytics and Reporting</li>
+              <li>Discounts and Promotions</li>
+            </ul>
+          </div>
+          <div class="footer_col">
+            <h2 class="footer-hd">Contact Us</h2>
+            <p class="footer-para"><b>Email</b> : shoppiyaar@gmail.com</p>
+            <p class="footer-para">
+              <b>Address</b> : LTW Mall, Kevi Road, Delhi-110023
+            </p>
+            <p class="footer-para"><b>Phone</b> : +99-569-317-780</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
